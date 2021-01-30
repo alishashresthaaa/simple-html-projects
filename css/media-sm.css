@@ -1,0 +1,124 @@
+/* Meida query for small devices */
+
+@media(max-width:670px){
+  
+  /* Grid-Area */
+.one{
+  grid-area: one;
+}
+
+.two{
+  grid-area: two;
+}
+
+.three{
+  grid-area: three;
+}
+
+.four{
+  grid-area: four;
+}
+
+.five{
+  grid-area: five;
+}
+
+.six{
+  grid-area: six;
+}
+
+.seven{
+  grid-area: seven;
+}
+
+.eight{
+  grid-area: eight;
+}
+
+  .flexbox,
+  .footer-flexbox ul{
+    display: grid;
+  }
+
+
+  .grid-3,
+.flexbox,
+  .img-grid,
+  .four-boxes,
+  .card-container .column,
+  .slider-grid,
+  .footer-flexbox ul{
+    grid-template-columns: 1fr;
+  }
+
+  .content .content-start,
+  .grid-3 .bg-text{
+    align-items: center;
+  }
+
+  .img-grid,
+  .four-boxes > div,
+  .footer-flexbox ul{
+    text-align: center;
+  }
+  .showcase .content{
+    margin: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .content .content-start{
+    padding: 50px;
+  }
+
+  .grid-3{
+    grid-template-areas: 'one' 'two' 'three'
+                'four' 'five' 'seven' 'six' 'eight';
+  }
+
+  .grid-3 > div:nth-child(3){
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .flexbox{
+    grid-gap: 60px;
+  }
+
+  
+  .img-grid > p{
+    padding: 25px;
+  }
+
+  .four-boxes{
+    grid-auto-rows: 300px;
+  }
+
+  .four-boxes > div:nth-child(1){
+    background-color: var(--bg-light);
+  }
+
+  .card-container .column{
+    grid-gap: 50px;
+  }
+
+  .card-content .lorem-content{
+    padding: 50px;
+  }
+
+  .team-container  .card-header{
+    display: none;
+  }
+
+   .slider-container{
+    height: 500px;
+  }
+
+  .slide .content{
+    width: 400px;
+  }
+
+  .navbar{
+    display: none;
+  }
+}

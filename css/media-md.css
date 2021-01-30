@@ -1,0 +1,94 @@
+/* Media Query for medium devices */
+
+@media(min-width:670px) and (max-width:992px){
+
+    /* Grid-Area */
+.one{
+  grid-area: one;
+}
+
+.two{
+  grid-area: two;
+}
+
+.three{
+  grid-area: three;
+}
+
+.four{
+  grid-area: four;
+}
+
+.five{
+  grid-area: five;
+}
+
+.six{
+  grid-area: six;
+}
+
+.seven{
+  grid-area: seven;
+}
+
+.eight{
+  grid-area: eight;
+}
+
+.flexbox,
+.footer-flexbox ul
+{
+  display: grid;
+}
+
+.grid-3,
+.flexbox,
+.four-boxes,
+.card-container .column,
+.footer-flexbox ul
+{
+  grid-template-columns: repeat(2,1fr);
+}
+
+.img-grid,
+.slider-grid{
+  grid-template-columns: repeat(1,1fr);
+}
+
+.grid-3 > div:nth-child(3){
+  grid-row: auto;
+  grid-column: auto;
+}
+
+.grid-3{
+  grid-template-areas: 'one four' 
+                        'two six' 
+                         'five seven'
+                         'eight three';
+}  
+
+.flexbox{
+  grid-gap: 60px;
+}
+
+.img-grid > img{
+  display: block;
+  height: 500px;
+}
+
+.four-boxes{
+  grid-auto-rows: 400px;
+}
+
+.slider-container{
+  height: 400px;
+}
+
+.slide .content{
+  width: 90%;
+}
+
+.navbar{
+  display: none;
+}
+}

@@ -1,0 +1,48 @@
+/* Fonts */
+.text-light{
+  font-weight: 200;
+}
+
+.text-normal{
+  font-weight: 600;
+}
+
+.text-bold{
+  font-weight: 800;
+}
+
+.text-white{
+  color: #eee;
+}
+
+.text-dark{
+  color: #111;
+}
+
+.text-gold{
+  color: #caba9c;
+}
+
+.text-red{
+  color: #800000;
+}
+
+.text-small{
+  font-size: 24px;
+}
+
+.text-medium{
+  font-size: 32px;
+}
+
+.text-large{
+  font-size: 48px;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-italics{
+  font-style: italic;
+}

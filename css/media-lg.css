@@ -1,0 +1,47 @@
+/* Media Query: Min width=992px Max-width=1200px */
+
+@media(min-width:992px) and (max-width: 1200px){
+  .img-grid,
+  .slider-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .four-boxes{
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 250px;
+  }
+
+  .img-grid > img{
+    display: none;
+  }
+
+  .img-grid > p{
+    padding: 25px;
+  }
+
+  .img-grid > div:nth-child(2) p{
+    padding: 20px;
+  }
+
+  .slider-container{
+    height: 400px;
+  }
+
+  .slide .content{
+    width: 80%;
+  }
+
+  .footer-flexbox{
+    display: flex;
+  }
+
+  .hide-on-lg{
+    display: none;
+  }
+}
+
+@media (min-width:1200px){
+  .hide-on-lg{
+    display: none;
+  }
+}

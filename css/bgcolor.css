@@ -1,0 +1,10 @@
+/* Background */
+:root{
+  --bg-light:#eee;
+  --bg-dark:#222;
+  --bg-lighter:#fff;
+  --bg-darker:#111;
+  --bg-grey:#999;
+  --bg-gold:#caba9c;
+  --bg-darkish:#313131;
+}

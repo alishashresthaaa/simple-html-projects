@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Fontawesome Link -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-lg.css">
+  <link rel="stylesheet" href="css/media-md.css">
+  <link rel="stylesheet" href="css/media-sm.css">
+
+  <link rel="stylesheet" href="css/animation.css">
+
+ 
+
+  <!-- Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <title>Hair Salon Website</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>    
+    <nav>    
+      <span class="open-slide hide-on-lg">
+        <a href="#" onclick="openSlideMenu()">
+         <svg width="30" height="30">
+           <path d="M0,5 30,5" stroke="#fff"  stroke-width="5" />
+           <path d="M0,14 30,14" stroke="#fff"  stroke-width="5" />
+           <path d="M0,23 30,23" stroke="#fff"  stroke-width="5" />
+         </svg>
+        </a>
+       </span>
+
+      <ul class="navbar">        
+        <li><a href="#showcase">mySalon</a></li>
+        <li><a href="#display-grid">Our Work</a></li>        
+        <li><a href="#offers-column">Our Offers</a></li>
+        <li><a href="#teams-column">Our Team</a></li>        
+        <li><a href="#slider-grid">Book Now</a></li>     
+        <li><a href="#address">Contact Us</a></li>       
+      </ul>
+
+      <div id="side-menu" class="side-nav hide-on-lg">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <li><a href="#showcase">mySalon</a></li>
+        <li><a href="#display-grid">Our Work</a></li>        
+        <li><a href="#offers-column">Our Offers</a></li>
+        <li><a href="#teams-column">Our Team</a></li>        
+        <li><a href="#slider-grid">Book Now</a></li>     
+        <li><a href="#address">Contact Us</a></li>       
+      </div>
+   </nav>
+  </header>
+
+
+  <!-- Showcase -->
+  <div id="showcase" class="container">   
+    <div class="showcase">
+      <div class="fullscreen-image">
+        <img src="img/showcase.jpg" class="hidden-zoomIn">
+      </div>
+
+      <div class="showcase-overlay"></div>  
+
+      <div class="content hidden-slideInLeft">
+       <div class="content-start">
+         <span class="text-uppercase text-medium text-gold mb-4">The Best</span>
+         <span class="text-uppercase text-large text-white mb-4">Professional</span>
+         <span class="text-uppercase text-white text-medium mb-4">Care for</span> 
+         <span class="text-uppercase text-gold text-large mb-4">your hair</span>     
+         <a href="#" class="btn btn-outline">Book Now</a>
+       </div>
+      </div>   
+    </div>
+  </div>   
+
+
+  <!--Images - Grid 3*3 -->
+  <section id="display-grid" class=" container">
+    <div class="grid-3">
+      <!-- Box 1 -->
+      <div class="bg-img one hidden-fadeIn"></div>
+      
+      <!-- Box 2 -->
+      <div class="bg-text two">
+        <span class="text-small text-light hidden-zoomIn">Hair</span> 
+        <span class="text-small text-bold text-ligther hidden-zoomIn">Coloring</span>
+        <span class="text-medium text-bold text-gold hidden-zoomIn">Professional</span>
+      </div> 
+
+      <!-- Box 3 -->
+      <div class="bg-img three hidden-fadeIn"></div>
+      
+      <!-- Box 4 -->
+      <div class="bg-text four">
+        <span class="text-small text-light hidden-zoomIn"></span>Hair</span> 
+        <span class="text-small text-bold hidden-zoomIn">Styling</span>
+        <span class="text-medium text-bold text-red hidden-zoomIn">Professional</span>
+      </div>     
+
+      <!-- Box 5 -->
+     <div class="bg-img five hidden-fadeIn"></div>          
+              
+      <!-- Box 6 -->
+     <div class="bg-img six hidden-fadeIn"></div>       
+          
+      <!-- Box 7 -->
+      <div class="bg-text seven">
+        <span class="text-small text-light hidden-zoomIn">Beauty</span>
+        <span class="text-small text-bold hidden-zoomIn">Makeup </span>
+        <span class="text-medium text-bold text-red hidden-zoomIn">Professional</span>
+      </div>   
+
+      <!-- Box 8 -->
+      <div class="bg-text eight">       
+        <span class="text-small text-light hidden-zoomIn">Hair</span>
+        <span class="text-small text-bold hidden-zoomIn">Cutting</span>
+        <span class="text-medium text-bold text-gold hidden-zoomIn">Professional</span>
+      </div>        
+    </div>     
+  </section> 
+
+
+  <!-- FashionIcons - FlexBox -->
+  <section id="fashion-flexbox" class="container">
+    <div class="flexbox">
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fas fa-crown"></i>
+        </p>
+        <h3 class="text-white text-bold text-medium">112</h3>
+        <p class="text-gold text-medium">Beauty Styles</p>
+      </div>  
+
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fas fa-cut"></i>
+        </p>
+        <h3 class="text-white text-bold text-medium">45</h3>
+        <p class="text-gold text-medium">Hair Styles</p>
+      </div>  
+
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fas fa-paint-brush"></i>
+        </p>
+        <h3 class="text-white text-bold text-medium">56</h3>
+        <p class="text-gold text-medium">Makeup Styles</p>
+      </div> 
+
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fas fa-tint"></i>
+        </p>
+        <h3 class="text-white text-bold text-medium">34</h3>
+        <p class="text-gold text-medium">Hair Color Styles</p>
+      </div>
+    </div>    
+  </section>
+
+
+  <!-- Image - Grid-1 -->
+  <section id="image-grid-1" class="container">
+    <div class="img-grid">  
+      <img src="img/grid2-img1.jpg" class="hidden-slideInRight">      
+      <div class="hidden-slideInLeft">
+        <span class="text-uppercase text-medium text-gold mb-4">Individual<br></span>
+        <span class="text-uppercase text-large text-dark mb-4">Approach<br></span>
+        <span class="text-uppercase text-dark text-medium mb-4">to the choice<br></span> 
+        <span class="text-uppercase text-gold text-large mb-4">of your style<br></span>         
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet libero aut illo officiis quae tenetur sint eveniet nemo odio, consequatur voluptatibus, maiores rerum ut minima.</p>      
+        <hr>   
+        <a href="#" class="btn btn-block">Book Now</a>   
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Why Us - Grid 1*4 -->
+  <section id="grid-1*4-1" class="container">
+    <div class="four-boxes">
+      <div class="hidden-slideInRight">
+        <h3 class="text-uppercase text-medium text-darker text-bold">Why <br>choose <br> our <br> salon</h3>        
+      </div>  
+      <div class="hidden-slideInRight">
+        <h3 class="text-uppercase text-medium text-dark text-light">Top of line <span class="text-bold">products</span></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fuga suscipit nesciunt.</p>
+      </div>  
+      <div class="hidden-slideInLeft">
+        <h3 class="text-uppercase text-medium text-dark text-light">Professional <span class="text-bold">Stylists </span></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fuga suscipit nesciunt.</p>
+      </div>  
+      <div class="hidden-slideInLeft">
+        <h3 class="text-uppercase text-medium text-dark text-light">Special gifts and <span class="text-bold">offers</span></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fuga suscipit nesciunt.</p>
+      </div>
+    </div>    
+  </section>
+
+
+  <!-- Offers -  3-Columns -->
+  <section id="offers-column" class="container">
+    <div class="card-container offer-container">
+     <span class="card-title">
+       <h3 class="text-white text-large text-uppercase">
+         The Best offers
+        </h3>
+      </span>
+      <div class="column">
+        <!-- Column 1 -->
+        <div class="card hidden-zoomIn">
+          <div class="card-header">
+            <img src="img/pricing-1.jpg" alt="">
+          </div>
+          <div class="card-content">
+          <ul>
+            <li class="text-uppercase text-medium header">Box 1</li>
+            <li class="emph"><strong>$45</strong> all at once</li>
+            <li>Golden Facial</li>
+            <li>Hair Trim</li>
+            <li>Hair color</li>
+            <li>Makeup</li>
+            <li><a href="#" class="btn btn-flat">Book Now</a></li>
+          </ul>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="card best hidden-zoomIn">
+          <div class="card-header">
+            <img src="img/pricing-2.jpg" alt="">
+          </div>
+          <div class="card-content">
+          <ul>
+            <li class="text-uppercase text-medium header">Box 1</li>
+            <li class="emph"><strong>$45</strong> all at once</li>
+            <li>Golden Facial</li>
+            <li>Hair Trim</li>
+            <li>Hair color</li>
+            <li>Makeup</li>
+            <li><a href="#" class="btn btn-flat">Book Now</a></li>
+          </ul>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="card hidden-zoomIn">
+          <div class="card-header">
+            <img src="img/pricing-3.jpg" alt="">
+          </div>
+          <div class="card-content">
+          <ul>
+            <li class="text-uppercase text-medium header">Box 1</li>
+            <li class="emph"><strong>$45</strong> all at once</li>
+            <li>Golden Facial</li>
+            <li>Hair Trim</li>
+            <li>Hair color</li>
+            <li>Makeup</li>
+            <li><a href="#" class="btn btn-flat">Book Now</a></li>
+          </ul>
+          </div>
+        </div>
+      </div> <!--End of column-->
+    </div> <!--End of card-container -->
+  </section>
+
+
+  <!-- Image - Grid-2 -->
+  <section id="image-grid-2" class="container" >
+    <div class="img-grid" >  
+      <img src="img/grid2-img2.jpeg"class="hidden-slideInRight">      
+      <div class="hidden-slideInLeft">
+        <span class="text-uppercase text-medium text-gold mb-4">Trendy <br></span>
+        <span class="text-uppercase text-large text-dark mb-4">Hairstyles <br></span>
+        <span class="text-uppercase text-dark text-medium mb-4">spring / summer <br></span> 
+        <span class="text-uppercase text-gold text-large mb-4">2020 / 2021 <br></span> 
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet libero aut illo officiis quae tenetur sint eveniet nemo odio, consequatur voluptatibus, maiores rerum ut minima.</p>      
+        <hr>   
+        <a href="#" class="btn btn-block">Book Now</a>   
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teams 3-Columns -->
+  <section id="teams-column" class="container">
+    <div class="card-container team-container">
+      <span class="card-title">
+        <h3 class="text-white text-large text-uppercase">
+          Our Professional Team
+        </h3>
+      </span>
+
+      <div class="column">
+        <!-- Column 1 -->
+        <div class="card hidden-zoomIn">
+          <div class="card-header">
+            <img src="img/team1.jpg" alt="">
+         </div>
+          <div class="card-content">
+            <ul>
+              <li class="text-uppercase text-medium header">Member One</li>
+              <li class="lorem-content">Lorem ipsum dolor sit amet consectetur          adipisicing elit. Quaerat magni id laborum, sit voluptates at harum. Nulla maiores aliquid asperiores.</li>         
+              <li class="media-content">
+              <a href="#"><i class="fab fa-facebook"></i></a> 
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Column 2 -->
+        <div class="card hidden-zoomIn">
+          <div class="card-header">
+            <img src="img/team2.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <ul>
+              <li class="text-uppercase text-medium header">Member One</li>
+              <li class="lorem-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni id laborum, sit voluptates at harum. Nulla maiores aliquid asperiores.</li>         
+              <li class="media-content"><a href="#">
+                <i class="fab fa-facebook"></i></a> 
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+    
+        <!-- Column 3 -->
+        <div class="card hidden-zoomIn">
+          <div class=" card-header">
+            <img src="img/team3.jpg" alt="">
+          </div>
+          <div class="card-content">
+            <ul>
+              <li class="text-uppercase text-medium header">Member One</li>
+              <li class="lorem-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat magni id laborum, sit voluptates at harum. Nulla maiores aliquid asperiores.</li>         
+              <li class="media-content">
+                <a href="#"><i class="fab fa-facebook"></i></a> 
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>  <!--End of column-->
+    </div> <!--End of card container-->
+  </section>
+
+
+  <!-- Slider-Grid -->
+  <section id="slider-grid" class="container">
+    <div class="slider-grid">  
+      <div class="grid-4 hidden-slideInRight">
+        <a href="#"><img src="img/logo1.png" alt=""></a> 
+        <a href="#"><img src="img/logo2.png" alt=""></a>
+        <a href="#"><img src="img/logo3.png" alt=""></a>
+        <a href="#"><img src="img/logo4.png" alt=""></a>
+        <a href="#"><img src="img/logo5.png" alt=""></a>
+        <a href="#"><img src="img/logo6.png" alt=""></a>
+        <a href="#"><img src="img/logo7.png" alt=""></a>
+        <a href="#"><img src="img/logo8.png" alt=""></a>      
+      </div>   
+
+      <div class="slider-container hidden-slideInLeft">
+        <div class="slider">
+          <!-- Slide 1 -->
+          <div class="slide current">
+            <div class="content">
+              <h1 class="text-gold text-uppercase text-small mb-4">Slide One</h1>
+              <p class="text-white text-small text-italics mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, veritatis blanditiis! Omnis dolore at commodi sapiente quidem reprehenderit dignissimos sed.</p>
+              <p><i class="fas fa-quote-right fa-3x align-right"></i></p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="content">
+              <h1 class="text-gold text-uppercase text-small mb-4">Slide Two</h1>
+              <p class="text-white text-small text-italics mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, veritatis blanditiis! Omnis dolore at commodi sapiente quidem reprehenderit dignissimos sed.</p>
+              <p><i class="fas fa-quote-right fa-3x align-right"></i></p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="content">
+              <h1 class="text-gold text-uppercase text-small mb-4">Slide Three</h1>
+              <p class="text-white text-small text-italics mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, veritatis blanditiis! Omnis dolore at commodi sapiente quidem reprehenderit dignissimos sed.</p>
+              <p><i class="fas fa-quote-right fa-3x align-right"></i></p>
+            </div>
+          </div>
+        </div> <!--End of slider-->
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <button id="prev"><i class="fas fa-arrow-left"></i></button>
+          <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>  <!--End of slider-container-->       
+    </div> <!--End of slider-grid -->
+  </section>
+
+
+  <!--  Addresses - Grid 1*4 -->
+  <section id="address" class="container">
+    <div class="four-boxes">
+      <div class="hidden-slideInRight">
+        <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Motto</span></h3>      
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, mollitia.</p>
+      </div>
+
+      <div class="hidden-slideInRight">
+        <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Address</span></h3>
+        <p>Samakhusi, Kathmandu <br>
+          Dharara, Pokhara <br>
+          Chabhil, Kathmandu
+        </p>
+      </div>  
+
+      <div class="hidden-slideInLeft">
+        <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Phone</span></h3>
+        <p>9845678966 <br>
+           01-4783452<br>
+           01-47980545
+        </p>
+      </div>  
+
+      <div class="hidden-slideInLeft">
+       <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Hours</span></h3>
+        <p>Monday - Friday: 9:00am-6:00pm <br>
+          Satuday & Sunday: Closed
+        </p>
+      </div>
+    </div>    
+  </section>
+
+
+  <!-- Socials -  FlexBox-->
+  <section id="socials-flexbox" class="container">
+    <div class="flexbox">
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fab fa-facebook-f"></i>
+        </p>
+        <p class="text-gold text-medium">Join Us</p>
+      </div>  
+
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fab fa-youtube"></i>
+        </p>
+        <p class="text-gold text-medium">Watch Us</p>
+      </div>  
+
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fab fa-instagram"></i>
+        </p>
+        <p class="text-gold text-medium">Follow Us</p>
+      </div>  
+
+      <div class="hidden-fadeInUp">
+        <p class="text-gold text-large">
+          <i class="fab fa-pinterest"></i>
+        </p>
+        <p class="text-gold text-medium">Pin Us</p>
+      </div>  
+    </div>    
+  </section>  
+
+
+  <!-- Google Map -->
+  <section id="map" class="hidden-fadeIn">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0220040031054!2d85.34631851490165!3d27.71660688278811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb193a8a45fe53%3A0x158e2b04ecf54f53!2sHair%20salon!5e0!3m2!1sne!2snp!4v1604909961019!5m2!1sne!2snp" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="no" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-flexbox">
+      <nav>
+        <ul>
+          <li><a href="#">Copyright &copy; 2020</a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">About Us</a></li>       
+        </ul>
+     </nav>
+    </div>
+  </footer>
+
+
+  <!-- Javascripts -->
+  <script src="js/slider.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+
+
+<script>
+  function openSlideMenu(){
+    document.getElementById('side-menu').style.width='250px';
+  }
+
+  function closeSlideMenu(){
+    document.getElementById('side-menu').style.width='0';
+  }
+</script>
+
+</body>
+</html>

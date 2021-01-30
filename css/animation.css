@@ -1,0 +1,57 @@
+.fadeIn{
+  animation: fade-in 1.4s;
+}
+
+.fadeInUp{
+  animation: fade-in-up 2s;
+}
+
+.zoomIn{
+  animation: zoom-in 1s;
+}
+
+.slideInLeft{
+  animation: slide-in-left 1.4s;
+}
+
+.slideInRight{
+  animation: slide-in-right 1.4s;
+}
+
+
+
+@keyframes fade-in{
+  from {opacity: 0;  transform: scale(.7, .7);}
+  to {opacity: 1;}
+}
+
+
+@keyframes fade-in-up{
+  from {opacity: 0;  transform: translate(0,50%);}
+  to {opacity: 1; transform: translate(0,0);}
+}
+
+
+@keyframes zoom-in{
+  0% {
+    transform: scale(0.5,0.5);
+  }
+  50% {
+      transform: scale(0.8,0.8);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+@keyframes slide-in-left{
+  0% {right: -100%;}
+  100% { right: 0%; }
+}
+
+@keyframes slide-in-right{
+  0% {left: -100%;}
+  100% { left: 0%; }
+}
+
+
