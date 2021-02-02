@@ -16,9 +16,8 @@
   <link rel="stylesheet" href="css/media-md.css">
   <link rel="stylesheet" href="css/media-sm.css">
 
-  <link rel="stylesheet" href="css/animation.css">
-
- 
+  <!-- If you want to use core css to animate uncomment this -->
+  <!-- <link rel="stylesheet" href="css/animation.css"> --> 
 
   <!-- Animate on Scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -66,12 +65,12 @@
   <div id="showcase" class="container">   
     <div class="showcase">
       <div class="fullscreen-image">
-        <img src="img/showcase.jpg" class="hidden-zoomIn">
+        <img src="img/showcase.jpg" data-aos="zoom-in">
       </div>
 
       <div class="showcase-overlay"></div>  
 
-      <div class="content hidden-slideInLeft">
+      <div class="content" data-aos="fade-left">
        <div class="content-start">
          <span class="text-uppercase text-medium text-gold mb-4">The Best</span>
          <span class="text-uppercase text-large text-white mb-4">Professional</span>
@@ -88,43 +87,43 @@
   <section id="display-grid" class=" container">
     <div class="grid-3">
       <!-- Box 1 -->
-      <div class="bg-img one hidden-fadeIn"></div>
+      <div class="bg-img one" data-aos="fade-in"></div>
       
       <!-- Box 2 -->
       <div class="bg-text two">
-        <span class="text-small text-light hidden-zoomIn">Hair</span> 
-        <span class="text-small text-bold text-ligther hidden-zoomIn">Coloring</span>
-        <span class="text-medium text-bold text-gold hidden-zoomIn">Professional</span>
+        <span class="text-small text-light" data-aos="zoom-in">Hair</span> 
+        <span class="text-small text-bold text-ligther" data-aos="zoom-in">Coloring</span>
+        <span class="text-medium text-bold text-gold" data-aos="zoom-in">Professional</span>
       </div> 
 
       <!-- Box 3 -->
-      <div class="bg-img three hidden-fadeIn"></div>
+      <div class="bg-img three" data-aos="fade-in"></div>
       
       <!-- Box 4 -->
       <div class="bg-text four">
-        <span class="text-small text-light hidden-zoomIn"></span>Hair</span> 
-        <span class="text-small text-bold hidden-zoomIn">Styling</span>
-        <span class="text-medium text-bold text-red hidden-zoomIn">Professional</span>
+        <span class="text-small text-light " data-aos="zoom-in"></span>Hair</span> 
+        <span class="text-small text-bold" data-aos="zoom-in">Styling</span>
+        <span class="text-medium text-bold text-red" data-aos="zoom-in">Professional</span>
       </div>     
 
       <!-- Box 5 -->
-     <div class="bg-img five hidden-fadeIn"></div>          
+     <div class="bg-img five" data-aos="fade-in"></div>          
               
       <!-- Box 6 -->
-     <div class="bg-img six hidden-fadeIn"></div>       
+     <div class="bg-img six" data-aos="fade-in"></div>       
           
       <!-- Box 7 -->
       <div class="bg-text seven">
-        <span class="text-small text-light hidden-zoomIn">Beauty</span>
-        <span class="text-small text-bold hidden-zoomIn">Makeup </span>
-        <span class="text-medium text-bold text-red hidden-zoomIn">Professional</span>
+        <span class="text-small text-light" data-aos="zoom-in">Beauty</span>
+        <span class="text-small text-bold" data-aos="zoom-in">Makeup </span>
+        <span class="text-medium text-bold text-red" data-aos="zoom-in">Professional</span>
       </div>   
 
       <!-- Box 8 -->
       <div class="bg-text eight">       
-        <span class="text-small text-light hidden-zoomIn">Hair</span>
-        <span class="text-small text-bold hidden-zoomIn">Cutting</span>
-        <span class="text-medium text-bold text-gold hidden-zoomIn">Professional</span>
+        <span class="text-small text-light" data-aos="zoom-in">Hair</span>
+        <span class="text-small text-bold" data-aos="zoom-in">Cutting</span>
+        <span class="text-medium text-bold text-gold" data-aos="zoom-in">Professional</span>
       </div>        
     </div>     
   </section> 
@@ -133,7 +132,7 @@
   <!-- FashionIcons - FlexBox -->
   <section id="fashion-flexbox" class="container">
     <div class="flexbox">
-      <div class="hidden-fadeInUp">
+      <div  data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fas fa-crown"></i>
         </p>
@@ -141,7 +140,7 @@
         <p class="text-gold text-medium">Beauty Styles</p>
       </div>  
 
-      <div class="hidden-fadeInUp">
+      <div data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fas fa-cut"></i>
         </p>
@@ -149,7 +148,7 @@
         <p class="text-gold text-medium">Hair Styles</p>
       </div>  
 
-      <div class="hidden-fadeInUp">
+      <div data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fas fa-paint-brush"></i>
         </p>
@@ -157,7 +156,7 @@
         <p class="text-gold text-medium">Makeup Styles</p>
       </div> 
 
-      <div class="hidden-fadeInUp">
+      <div data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fas fa-tint"></i>
         </p>
@@ -171,8 +170,8 @@
   <!-- Image - Grid-1 -->
   <section id="image-grid-1" class="container">
     <div class="img-grid">  
-      <img src="img/grid2-img1.jpg" class="hidden-slideInRight">      
-      <div class="hidden-slideInLeft">
+      <img src="img/grid2-img1.jpg" data-aos="slide-right">      
+      <div data-aos="slide-left">
         <span class="text-uppercase text-medium text-gold mb-4">Individual<br></span>
         <span class="text-uppercase text-large text-dark mb-4">Approach<br></span>
         <span class="text-uppercase text-dark text-medium mb-4">to the choice<br></span> 
@@ -188,18 +187,18 @@
   <!-- Why Us - Grid 1*4 -->
   <section id="grid-1*4-1" class="container">
     <div class="four-boxes">
-      <div class="hidden-slideInRight">
+      <div data-aos="slide-right">
         <h3 class="text-uppercase text-medium text-darker text-bold">Why <br>choose <br> our <br> salon</h3>        
       </div>  
-      <div class="hidden-slideInRight">
+      <div data-aos="slide-right">
         <h3 class="text-uppercase text-medium text-dark text-light">Top of line <span class="text-bold">products</span></h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fuga suscipit nesciunt.</p>
       </div>  
-      <div class="hidden-slideInLeft">
+      <div data-aos="slide-left">
         <h3 class="text-uppercase text-medium text-dark text-light">Professional <span class="text-bold">Stylists </span></h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fuga suscipit nesciunt.</p>
       </div>  
-      <div class="hidden-slideInLeft">
+      <div data-aos="slide-left">
         <h3 class="text-uppercase text-medium text-dark text-light">Special gifts and <span class="text-bold">offers</span></h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa fuga suscipit nesciunt.</p>
       </div>
@@ -217,7 +216,7 @@
       </span>
       <div class="column">
         <!-- Column 1 -->
-        <div class="card hidden-zoomIn">
+        <div class="card" data-aos="slide-up">
           <div class="card-header">
             <img src="img/pricing-1.jpg" alt="">
           </div>
@@ -235,7 +234,7 @@
         </div>
 
         <!-- Column 2 -->
-        <div class="card best hidden-zoomIn">
+        <div class="card best" data-aos="slide-up" data-aos-duration="1500">
           <div class="card-header">
             <img src="img/pricing-2.jpg" alt="">
           </div>
@@ -253,7 +252,7 @@
         </div>
 
         <!-- Column 3 -->
-        <div class="card hidden-zoomIn">
+        <div class="card" data-aos="slide-up" data-aos-duration="2000">
           <div class="card-header">
             <img src="img/pricing-3.jpg" alt="">
           </div>
@@ -277,8 +276,8 @@
   <!-- Image - Grid-2 -->
   <section id="image-grid-2" class="container" >
     <div class="img-grid" >  
-      <img src="img/grid2-img2.jpeg"class="hidden-slideInRight">      
-      <div class="hidden-slideInLeft">
+      <img src="img/grid2-img2.jpeg" data-aos="slide-right">      
+      <div data-aos="slide-left">
         <span class="text-uppercase text-medium text-gold mb-4">Trendy <br></span>
         <span class="text-uppercase text-large text-dark mb-4">Hairstyles <br></span>
         <span class="text-uppercase text-dark text-medium mb-4">spring / summer <br></span> 
@@ -303,7 +302,7 @@
 
       <div class="column">
         <!-- Column 1 -->
-        <div class="card hidden-zoomIn">
+        <div class="card" data-aos="slide-up">
           <div class="card-header">
             <img src="img/team1.jpg" alt="">
          </div>
@@ -321,7 +320,7 @@
         </div>
     
         <!-- Column 2 -->
-        <div class="card hidden-zoomIn">
+        <div class="card" data-aos="slide-up" data-aos-duration="1500">
           <div class="card-header">
             <img src="img/team2.jpg" alt="">
           </div>
@@ -339,7 +338,7 @@
         </div>  
     
         <!-- Column 3 -->
-        <div class="card hidden-zoomIn">
+        <div class="card" data-aos="slide-up" data-aos-duration="2000">
           <div class=" card-header">
             <img src="img/team3.jpg" alt="">
           </div>
@@ -363,7 +362,7 @@
   <!-- Slider-Grid -->
   <section id="slider-grid" class="container">
     <div class="slider-grid">  
-      <div class="grid-4 hidden-slideInRight">
+      <div class="grid-4" data-aos="slide-right">
         <a href="#"><img src="img/logo1.png" alt=""></a> 
         <a href="#"><img src="img/logo2.png" alt=""></a>
         <a href="#"><img src="img/logo3.png" alt=""></a>
@@ -374,7 +373,7 @@
         <a href="#"><img src="img/logo8.png" alt=""></a>      
       </div>   
 
-      <div class="slider-container hidden-slideInLeft">
+      <div class="slider-container" data-aos="slide-left">
         <div class="slider">
           <!-- Slide 1 -->
           <div class="slide current">
@@ -417,12 +416,12 @@
   <!--  Addresses - Grid 1*4 -->
   <section id="address" class="container">
     <div class="four-boxes">
-      <div class="hidden-slideInRight">
+      <div data-aos="slide-right"> 
         <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Motto</span></h3>      
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, mollitia.</p>
       </div>
 
-      <div class="hidden-slideInRight">
+      <div data-aos="slide-right">
         <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Address</span></h3>
         <p>Samakhusi, Kathmandu <br>
           Dharara, Pokhara <br>
@@ -430,7 +429,7 @@
         </p>
       </div>  
 
-      <div class="hidden-slideInLeft">
+      <div data-aos="slide-left">
         <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Phone</span></h3>
         <p>9845678966 <br>
            01-4783452<br>
@@ -438,7 +437,7 @@
         </p>
       </div>  
 
-      <div class="hidden-slideInLeft">
+      <div data-aos="slide-left">
        <h3 class="text-uppercase text-medium text-dark text-light">Our  <span class="text-bold">Hours</span></h3>
         <p>Monday - Friday: 9:00am-6:00pm <br>
           Satuday & Sunday: Closed
@@ -451,28 +450,28 @@
   <!-- Socials -  FlexBox-->
   <section id="socials-flexbox" class="container">
     <div class="flexbox">
-      <div class="hidden-fadeInUp">
+      <div data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fab fa-facebook-f"></i>
         </p>
         <p class="text-gold text-medium">Join Us</p>
       </div>  
 
-      <div class="hidden-fadeInUp">
+      <div data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fab fa-youtube"></i>
         </p>
         <p class="text-gold text-medium">Watch Us</p>
       </div>  
 
-      <div class="hidden-fadeInUp">
+      <div data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fab fa-instagram"></i>
         </p>
         <p class="text-gold text-medium">Follow Us</p>
       </div>  
 
-      <div class="hidden-fadeInUp">
+      <div  data-aos="fade-up">
         <p class="text-gold text-large">
           <i class="fab fa-pinterest"></i>
         </p>
@@ -483,7 +482,7 @@
 
 
   <!-- Google Map -->
-  <section id="map" class="hidden-fadeIn">
+  <section id="map"data-aos="fade-in"> 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0220040031054!2d85.34631851490165!3d27.71660688278811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb193a8a45fe53%3A0x158e2b04ecf54f53!2sHair%20salon!5e0!3m2!1sne!2snp!4v1604909961019!5m2!1sne!2snp" width="100%" height="650" frameborder="0" style="border:0;" allowfullscreen="no" aria-hidden="false" tabindex="0"></iframe>
   </section>
 
@@ -507,7 +506,21 @@
   <!-- Javascripts -->
   <script src="js/slider.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animation.js"></script>
+
+  <!-- Animate on scroll javascript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:200,
+      duration:1000
+    });
+  </script>
+
+  <!-- If you want to have core javascript based animation rather than using 
+  the aos then uncomment this -->
+  <!-- <script src="js/animation.js"></script> -->
+
+
 
 
 <script>
