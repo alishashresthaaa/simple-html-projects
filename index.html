@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <title> CSS Grid</title>
+  <style>
+    .wrapper > div{
+      background:#eee;
+      padding:1em;
+      }
+
+    .wrapper > div:nth-child(odd){
+      background: #ccc;
+    }
+
+    .wrapper{
+      display: grid;
+      grid-template-columns:60% 40%;
+      /* row-gap: 1em;
+      column-gap: 1em; */
+      gap: 1em;
+
+    /* Obsolete Version */
+    /* grid-gap:1em;
+      grid-row-gap:1em;
+      grid-column-gap:1em; */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iusto numquam, doloribus illum saepe sit autem repellendus explicabo voluptatum. Rerum voluptates repudiandae ducimus molestias in eaque odit pariatur laudantium exercitationem aut facilis explicabo, deleniti nobis quaerat enim beatae, dolores, perspiciatis incidunt accusamus? Ullam porro cum harum numquam dolore quo commodi quasi nobis nulla est eligendi, eum quam perferendis sit? Aperiam saepe dolorum magnam quae magni natus nobis at excepturi et totam. Sunt qui sequi accusantium neque. Tempore natus ut quas.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id architecto voluptatem numquam nisi, accusamus nesciunt odio voluptate quisquam beatae, tempore repellat? Omnis at error fugit inventore animi nesciunt id aspernatur?
+    </div>   
+  </div>
+</body>
+</html>
